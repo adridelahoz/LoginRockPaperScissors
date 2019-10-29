@@ -16,9 +16,9 @@ if ( isset($_POST['logout']) ) {
 $names = array('Rock', 'Paper', 'Scissors');
 $human = isset($_POST["human"]) ? $_POST['human']+0 : -1;
 
-$computer = 0; // Hard code the computer to rock
+//$computer = 0; // Hard code the computer to rock
 // TODO: Make the computer be random
-// $computer = rand(0,2);
+$computer = rand(0,2);
 
 // This function takes as its input the computer and human play
 // and returns "Tie", "You Lose", "You Win" depending on play
